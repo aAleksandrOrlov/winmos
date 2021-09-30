@@ -71,20 +71,20 @@ const forms = (state) => {
         }
       }
 
-      postData('assets/server.php', formData)
-        .then((res) => {
-          console.log(res);
-          document.querySelector('.status').textContent = message.success;
-        })
-        .catch(() => {
-          document.querySelector('.status').textContent = message.failure;
-        })
-        .finally(() => {
-          inputs.forEach((input) => (input.value = ''));
-          setTimeout(() => {
-            statusMessage.remove();
-          }, 5000);
-        });
+      // postData('assets/server.php', formData)
+      //   .then((res) => {
+      //     console.log(res);
+      //     document.querySelector('.status').textContent = message.success;
+      //   })
+      //   .catch(() => {
+      //     document.querySelector('.status').textContent = message.failure;
+      //   })
+      //   .finally(() => {
+      //     inputs.forEach((input) => (input.value = ''));
+      //     setTimeout(() => {
+      //       statusMessage.remove();
+      //     }, 5000);
+      //   });
     });
   });
 };

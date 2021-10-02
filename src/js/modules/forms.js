@@ -71,6 +71,9 @@ const forms = (state) => {
         }
       }
 
+      statusMessage.textContent = message.loading;
+      setTimeout(() => (statusMessage.textContent = message.success), 2000);
+
       // postData('assets/server.php', formData)
       //   .then((res) => {
       //     console.log(res);

@@ -1,5 +1,5 @@
 # #Winmos
-An application of windows market. Coded on clear JavaScript by modular structure
+An application of windows market. Coded on pure JavaScript by modular structure
 ---
 Realised functions:
 - Modal windows
